@@ -1,0 +1,9 @@
+[theme]
+base = "dark"
+font = "serif"                     # Font family for the app, options are "sans serif", "serif", or "monospace".
+
+[client]
+toolbarMode = "minimal" # minimal or viewer  
+
+[server]
+maxUploadSize = 50

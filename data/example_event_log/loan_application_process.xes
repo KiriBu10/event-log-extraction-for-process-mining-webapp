@@ -1,0 +1,249 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<log xes.version="1.0" xes.features="nested-attributes" xmlns="http://www.xes-standard.org/">
+  <trace>
+    <string key="concept:name" value="1"/>
+    <event>
+      <string key="concept:name" value="Receive Loan Application"/>
+      <date key="time:timestamp" value="2023-09-10T10:00:00"/>
+    </event>
+    <event>
+      <string key="concept:name" value="Check Credit History"/>
+      <date key="time:timestamp" value="2023-09-10T10:07:00"/>
+    </event>
+    <event>
+      <string key="concept:name" value="Approve Application"/>
+      <date key="time:timestamp" value="2023-09-10T10:14:00"/>
+    </event>
+    <event>
+      <string key="concept:name" value="Inform Customer Approval"/>
+      <date key="time:timestamp" value="2023-09-10T10:30:00"/>
+    </event>
+    <event>
+      <string key="concept:name" value="Disburse Funds"/>
+      <date key="time:timestamp" value="2023-09-10T10:40:00"/>
+    </event>
+    <event>
+      <string key="concept:name" value="Archive Case"/>
+      <date key="time:timestamp" value="2023-09-10T11:08:00"/>
+    </event>
+  </trace>
+  <trace>
+    <string key="concept:name" value="2"/>
+    <event>
+      <string key="concept:name" value="Receive Loan Application"/>
+      <date key="time:timestamp" value="2023-09-10T10:00:00"/>
+    </event>
+    <event>
+      <string key="concept:name" value="Check Credit History"/>
+      <date key="time:timestamp" value="2023-09-10T10:13:00"/>
+    </event>
+    <event>
+      <string key="concept:name" value="Reject Application"/>
+      <date key="time:timestamp" value="2023-09-10T10:37:00"/>
+    </event>
+    <event>
+      <string key="concept:name" value="Inform Customer Rejection"/>
+      <date key="time:timestamp" value="2023-09-10T10:48:00"/>
+    </event>
+    <event>
+      <string key="concept:name" value="Archive Case"/>
+      <date key="time:timestamp" value="2023-09-10T11:12:00"/>
+    </event>
+  </trace>
+  <trace>
+    <string key="concept:name" value="3"/>
+    <event>
+      <string key="concept:name" value="Receive Loan Application"/>
+      <date key="time:timestamp" value="2023-09-10T10:00:00"/>
+    </event>
+    <event>
+      <string key="concept:name" value="Check Credit History"/>
+      <date key="time:timestamp" value="2023-09-10T10:23:00"/>
+    </event>
+    <event>
+      <string key="concept:name" value="Approve Application"/>
+      <date key="time:timestamp" value="2023-09-10T10:49:00"/>
+    </event>
+    <event>
+      <string key="concept:name" value="Inform Customer Approval"/>
+      <date key="time:timestamp" value="2023-09-10T10:59:00"/>
+    </event>
+    <event>
+      <string key="concept:name" value="Disburse Funds"/>
+      <date key="time:timestamp" value="2023-09-10T11:17:00"/>
+    </event>
+    <event>
+      <string key="concept:name" value="Archive Case"/>
+      <date key="time:timestamp" value="2023-09-10T11:42:00"/>
+    </event>
+  </trace>
+  <trace>
+    <string key="concept:name" value="4"/>
+    <event>
+      <string key="concept:name" value="Receive Loan Application"/>
+      <date key="time:timestamp" value="2023-09-10T10:00:00"/>
+    </event>
+    <event>
+      <string key="concept:name" value="Check Credit History"/>
+      <date key="time:timestamp" value="2023-09-10T10:30:00"/>
+    </event>
+    <event>
+      <string key="concept:name" value="Reject Application"/>
+      <date key="time:timestamp" value="2023-09-10T10:58:00"/>
+    </event>
+    <event>
+      <string key="concept:name" value="Inform Customer Rejection"/>
+      <date key="time:timestamp" value="2023-09-10T11:19:00"/>
+    </event>
+    <event>
+      <string key="concept:name" value="Archive Case"/>
+      <date key="time:timestamp" value="2023-09-10T11:35:00"/>
+    </event>
+  </trace>
+  <trace>
+    <string key="concept:name" value="5"/>
+    <event>
+      <string key="concept:name" value="Receive Loan Application"/>
+      <date key="time:timestamp" value="2023-09-10T10:00:00"/>
+    </event>
+    <event>
+      <string key="concept:name" value="Check Credit History"/>
+      <date key="time:timestamp" value="2023-09-10T10:21:00"/>
+    </event>
+    <event>
+      <string key="concept:name" value="Reject Application"/>
+      <date key="time:timestamp" value="2023-09-10T10:34:00"/>
+    </event>
+    <event>
+      <string key="concept:name" value="Inform Customer Rejection"/>
+      <date key="time:timestamp" value="2023-09-10T10:40:00"/>
+    </event>
+    <event>
+      <string key="concept:name" value="Archive Case"/>
+      <date key="time:timestamp" value="2023-09-10T10:45:00"/>
+    </event>
+  </trace>
+  <trace>
+    <string key="concept:name" value="6"/>
+    <event>
+      <string key="concept:name" value="Receive Loan Application"/>
+      <date key="time:timestamp" value="2023-09-10T10:00:00"/>
+    </event>
+    <event>
+      <string key="concept:name" value="Check Credit History"/>
+      <date key="time:timestamp" value="2023-09-10T10:19:00"/>
+    </event>
+    <event>
+      <string key="concept:name" value="Reject Application"/>
+      <date key="time:timestamp" value="2023-09-10T10:34:00"/>
+    </event>
+    <event>
+      <string key="concept:name" value="Inform Customer Rejection"/>
+      <date key="time:timestamp" value="2023-09-10T10:51:00"/>
+    </event>
+    <event>
+      <string key="concept:name" value="Archive Case"/>
+      <date key="time:timestamp" value="2023-09-10T11:09:00"/>
+    </event>
+  </trace>
+  <trace>
+    <string key="concept:name" value="7"/>
+    <event>
+      <string key="concept:name" value="Receive Loan Application"/>
+      <date key="time:timestamp" value="2023-09-10T10:00:00"/>
+    </event>
+    <event>
+      <string key="concept:name" value="Check Credit History"/>
+      <date key="time:timestamp" value="2023-09-10T10:22:00"/>
+    </event>
+    <event>
+      <string key="concept:name" value="Approve Application"/>
+      <date key="time:timestamp" value="2023-09-10T10:32:00"/>
+    </event>
+    <event>
+      <string key="concept:name" value="Inform Customer Approval"/>
+      <date key="time:timestamp" value="2023-09-10T10:44:00"/>
+    </event>
+    <event>
+      <string key="concept:name" value="Disburse Funds"/>
+      <date key="time:timestamp" value="2023-09-10T10:56:00"/>
+    </event>
+    <event>
+      <string key="concept:name" value="Archive Case"/>
+      <date key="time:timestamp" value="2023-09-10T11:01:00"/>
+    </event>
+  </trace>
+  <trace>
+    <string key="concept:name" value="8"/>
+    <event>
+      <string key="concept:name" value="Receive Loan Application"/>
+      <date key="time:timestamp" value="2023-09-10T10:00:00"/>
+    </event>
+    <event>
+      <string key="concept:name" value="Check Credit History"/>
+      <date key="time:timestamp" value="2023-09-10T10:15:00"/>
+    </event>
+    <event>
+      <string key="concept:name" value="Approve Application"/>
+      <date key="time:timestamp" value="2023-09-10T10:25:00"/>
+    </event>
+    <event>
+      <string key="concept:name" value="Inform Customer Approval"/>
+      <date key="time:timestamp" value="2023-09-10T10:34:00"/>
+    </event>
+    <event>
+      <string key="concept:name" value="Disburse Funds"/>
+      <date key="time:timestamp" value="2023-09-10T10:55:00"/>
+    </event>
+    <event>
+      <string key="concept:name" value="Archive Case"/>
+      <date key="time:timestamp" value="2023-09-10T11:16:00"/>
+    </event>
+  </trace>
+  <trace>
+    <string key="concept:name" value="9"/>
+    <event>
+      <string key="concept:name" value="Receive Loan Application"/>
+      <date key="time:timestamp" value="2023-09-10T10:00:00"/>
+    </event>
+    <event>
+      <string key="concept:name" value="Check Credit History"/>
+      <date key="time:timestamp" value="2023-09-10T10:21:00"/>
+    </event>
+    <event>
+      <string key="concept:name" value="Reject Application"/>
+      <date key="time:timestamp" value="2023-09-10T10:47:00"/>
+    </event>
+    <event>
+      <string key="concept:name" value="Inform Customer Rejection"/>
+      <date key="time:timestamp" value="2023-09-10T11:09:00"/>
+    </event>
+    <event>
+      <string key="concept:name" value="Archive Case"/>
+      <date key="time:timestamp" value="2023-09-10T11:19:00"/>
+    </event>
+  </trace>
+  <trace>
+    <string key="concept:name" value="10"/>
+    <event>
+      <string key="concept:name" value="Receive Loan Application"/>
+      <date key="time:timestamp" value="2023-09-10T10:00:00"/>
+    </event>
+    <event>
+      <string key="concept:name" value="Check Credit History"/>
+      <date key="time:timestamp" value="2023-09-10T10:30:00"/>
+    </event>
+    <event>
+      <string key="concept:name" value="Reject Application"/>
+      <date key="time:timestamp" value="2023-09-10T10:48:00"/>
+    </event>
+    <event>
+      <string key="concept:name" value="Inform Customer Rejection"/>
+      <date key="time:timestamp" value="2023-09-10T11:16:00"/>
+    </event>
+    <event>
+      <string key="concept:name" value="Archive Case"/>
+      <date key="time:timestamp" value="2023-09-10T11:37:00"/>
+    </event>
+  </trace>
+</log>
