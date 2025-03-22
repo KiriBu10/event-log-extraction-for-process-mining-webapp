@@ -132,7 +132,7 @@ if db_selected:
                     +'User question: ' + user_input
                     +f""" Context: If the user ask you to write a sql statement that return an event log make sure the event log has the following columns: case_id, activity_id, timestamp. """
                     +f"""And use quotes for identifiers. """
-                    +f"""And make sure that all columns of the eventlog are interpreted as varchar values. """               
+                    +f"""And make sure that all columns of the event log are interpreted as varchar values. """               
                     +f"""And return only the complete SQL query, leave out any other comments in the response. Return the query in plain text without markdown syntax. """ 
                     +'Your task: Try to answer the user question. ')
 
