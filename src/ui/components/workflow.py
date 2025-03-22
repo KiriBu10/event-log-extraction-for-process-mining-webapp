@@ -206,8 +206,11 @@ class SimpleApp():
     
     def calculate_metrics(self, state):
         if type(state['sqlexecuter']) != str:
-            df_true = pd.read_csv(self.path_to_groud_truth_eventlog, dtype='object')
-            state['result'] = 'I compared the extracted eventlog with the ground truth eventlog. This are the results: ' + str(dataframe_similarity(df_true, state['sqlexecuter']))
+            try:
+                df_true = pd.read_csv(self.path_to_groud_truth_eventlog, dtype='object')
+                state['result'] = 'I compared the extracted eventlog with the ground truth eventlog. This are the results: ' + str(dataframe_similarity(df_true, state['sqlexecuter']))
+            except:
+                state['result'] = "This is the result eventlog: "
         else:
             state['result'] = "Hm, I'm sorry, i couldn't run your statement. Let's try another one. Check also the example prompts."
         return state

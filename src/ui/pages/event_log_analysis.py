@@ -38,6 +38,7 @@ def display_txt_files(folder_path):
             try:
                 with open(file_path, "r", encoding="utf-8") as file:
                     content = file.read()
+                    st.text(file_name.split('.txt')[0])
                     st.code(content, language='text', wrap_lines =True)  # Display in Streamlit
             except Exception as e:
                 st.error(f"Error reading {file_name}: {e}")
@@ -65,6 +66,28 @@ def get_assistant_response(messages, llm_model_name, openai_api_key, conn):
     # st.write_stream(text_to_stream(text_result))
     # if tbl_result:
     #     st.dataframe(tbl_result)
+
+def create_event_log_visualisation(data):
+    import plotly.graph_objects as go
+    from collections import Counter
+    import pandas as pd
+    df = pd.DataFrame(data)
+    df = df.sort_values(['case_id', 'timestamp'])
+    # Create transition pairs
+    df['next_activity'] = df.groupby('case_id')['activity_id'].shift(-1)
+    transitions = df.dropna(subset=['next_activity'])
+    transition_counts = Counter(zip(transitions['activity_id'], transitions['next_activity']))
+    labels = list(set([a for a, b in transition_counts] + [b for a, b in transition_counts]))
+    label_to_index = {label: i for i, label in enumerate(labels)}
+    sources = [label_to_index[a] for a, b in transition_counts]
+    targets = [label_to_index[b] for a, b in transition_counts]
+    values = list(transition_counts.values())
+    fig = go.Figure(go.Sankey(
+        node=dict(label=labels, pad=20),
+        link=dict(source=sources, target=targets, value=values)
+    ))
+    fig.update_layout(title_text="Activity Transition Flow", font_size=10)
+    st.plotly_chart(fig)
 
 
 def render_header():
@@ -122,8 +145,13 @@ if db_selected:
                         result = get_assistant_response(messages, llm_model_name, openai_api_key, conn)
                         if type(result['sqlexecuter']) != str:
                             st.dataframe(result['sqlexecuter'])
+                            
                     except:
                         st.error("Seems like your OpenAI API key is invalid. Please check your OpenAI API key and try again.")
+                    try:
+                        create_event_log_visualisation(result['sqlexecuter'])
+                    except:
+                        pass
 
                 #st.write(messages)
 else:
