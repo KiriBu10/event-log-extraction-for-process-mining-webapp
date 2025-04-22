@@ -148,11 +148,11 @@ if db_selected:
                             
                     except:
                         st.error("Seems like your OpenAI API key is invalid. Please check your OpenAI API key and try again.")
-                    try:
-                        st.write_stream(text_to_stream('Let me try to create also a visualisation of that event log: '))
-                        create_event_log_visualisation(result['sqlexecuter'])
-                    except:
-                        st.write_stream(text_to_stream('Oh, something went wrong with the visualisation. You can try another prompt.'))
+                    # try:
+                    #     st.write_stream(text_to_stream('Let me try to create also a visualisation of that event log: '))
+                    #     create_event_log_visualisation(result['sqlexecuter'])
+                    # except:
+                    #     st.write_stream(text_to_stream('Oh, something went wrong with the visualisation. You can try another prompt.'))
 
                 #st.write(messages)
 else:
