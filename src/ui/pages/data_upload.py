@@ -29,10 +29,9 @@ if not use_uploaded_file:
 
 # Case 2: User chooses to upload a new file
 elif use_uploaded_file:
+    st.write("Visit the [project repository](https://github.com/KiriBu10/event-log-extraction-for-process-mining-webapp/blob/dev_kiran/README.md) to check the zip structure.")
     uploaded_files = data_preparation.upload_file(file_type=["zip"], key="is_file_uploaded")
     if uploaded_files:
-        st.write("Visit the [project repository](https://github.com/KiriBu10/event-log-extraction-for-process-mining-webapp/blob/dev_kiran/README.md) to check the zip structure.")
-
         with zipfile.ZipFile(io.BytesIO(uploaded_files.read()), "r") as z:
             file_names = z.namelist()
 
