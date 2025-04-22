@@ -1,5 +1,5 @@
 
-#Event Log Extraction for Process Mining Using Large Language Models
+# Event Log Extraction for Process Mining Using Large Language Models
 
 ## Overview
 
