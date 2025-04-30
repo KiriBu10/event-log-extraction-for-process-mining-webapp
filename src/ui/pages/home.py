@@ -3,7 +3,7 @@ from src.ui.components import app_state, navigation
 
 
 # Header Section with Icon
-st.title("From Prompt to Process: Large Language Model-Assisted Event Log Extraction from Relational Databases")
+st.title("From Prompt to Process: Event Log Extraction from Relational Databases Using Large Language Models")
 
 st.markdown("by reasearchers from Utrecht University and KLU""", unsafe_allow_html=True)
 
